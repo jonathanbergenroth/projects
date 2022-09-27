@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <img src="logo.png" height="120px" max-width="120px" class="logo" />
+        <a href="index.html"><button id="home1">Home</button></a>
+        <a href="allshoes.html"><button id="allshoes">Shoes</button></a>
+        <label for="search"></label>
+        <input type="search" id="myInput" onkeyup="myFunction()" />
+        <img
+          src="x.png"
+          width="25px"
+          height="25px"
+          id="x"
+          onclick="removesearchbar()"
+        />
+        <img
+          src="search.png"
+          width="35px"
+          height="35px"
+          id="search"
+          onclick="searchbar()"
+        />
+      </div>
+    </nav>
+
+    <div class="shoe-cards" id="cards">
+      <div class="card">
+        <ul id="myUL">
+          <li>
+            <img src="jordan4.png" width="180px" height="auto" /><a href="#"
+              >jordan4</a
+            >
+          </li>
+          <li>
+            <img src="jordan11.png" width="180px" height="auto" /><a href="#"
+              >jordan11</a
+            >
+          </li>
+          <li>
+            <img src="force1.png" width="180px" height="auto" /><a href="#"
+              >air force 1</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="colors" id="colors">
+      <div class="color">
+        <div class="color1" id="color1" onclick="cols()"></div>
+        <div class="color2" id="color2" onclick="colp()"></div>
+      </div>
+    </div>
+
+    <div id="shoe1">
+      <div class="header">
+        <p>Air Jordan 11</p>
+      </div>
+      <img src="jordan11.png" width="400px" height="auto" id="angle1" />
+      <img src="jordan11(3).png" width="400px" height="auto" id="angle2" />
+      <img src="jordan11(2).png" width="400px" height="auto" id="angle3" />
+      <img src="jordan11(4).png" width="400px" height="auto" id="angle4" />
+      <img src="jordan11(6).png" width="400px" height="auto" id="angle5" />
+      <img src="jordan11(5).png" width="400px" height="auto" id="angle6" />
+
+      <div class="lines">
+        <button id="line1" onclick="ang1()"></button>
+        <button id="line2" onclick="ang2()"></button>
+        <button id="line3" onclick="ang3()"></button>
+        <button id="line4" onclick="ang4()"></button>
+        <button id="line5" onclick="ang5()"></button>
+        <button id="line6" onclick="ang6()"></button>
+      </div>
+
+      <div class="infobox">
+        <div id="info1">
+          <p class="info">Jordan 11</p>
+          <p class="info">Red Black</p>
+          <p class="info">3200sek</p>
+          <form>
+            <select name="size" id="info" class="info">
+              <option value="39">39</option>
+              <option value="40">40</option>
+              <option value="41">41</option>
+              <option value="42">42</option>
+              <option value="43">43</option>
+              <option value="44">44</option>
+            </select>
+            <p class="info" id="cursor" onclick="wishlist()">
+              Lägg till i wishlist
+            </p>
+          </form>
+        </div>
+
+        <div id="info2">
+          <div class="infos">
+            <p class="info2">Jordan 11</p>
+            <p class="info2">Grey</p>
+            <p class="info2">11000sek</p>
+            <form>
+              <select name="size" id="info2" class="info2">
+                <option value="39">39</option>
+                <option value="40">40</option>
+                <option value="41">41</option>
+                <option value="42">42</option>
+                <option value="43">43</option>
+                <option value="44">44</option>
+              </select>
+              <p class="info" id="cursor" onclick="wishlist()">
+                Lägg till i wishlist
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.getElementById("cards").style.opacity = "0";
+      document.getElementById("myInput").style.opacity = "0";
+      document.getElementById("x").style.opacity = "0";
+    </script>
+  </body>
+</html>

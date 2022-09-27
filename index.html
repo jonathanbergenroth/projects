@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+
+<nav>
+  <div class="navbar">
+  <img src="logo.png" height="120px" max-width="120px" class="logo">
+  <a href="index.html"><button id="home">Home</button></a>
+  <a href="allshoes.html"><button id="allshoes">Shoes</button></a>
+  <label for="search"></label>
+  <input type="search" id="myInput" onkeyup="myFunction()">
+  <img src="x.png" width="25px" height="25px" id="x" onclick="removesearchbar()">
+  <img src="search.png" width="35px" height="35px" id="search" onclick="searchbar()">
+  </div>
+</nav>
+
+<div class="shoe-cards" id="cards">
+  <div class="card">
+    <ul id="myUL">
+      <li><a href="shoe1.html"><img src="jordan4.png" width="180px" height="auto">jordan 4</a></li>
+      <li><a href="shoe3.html"><img src="jordan11.png" width="180px" height="auto">jordan 11</a></li>
+      <li><a href="shoe2.html"><img src="force1.png" width="180px" height="auto">air force 1</a></li>
+      <li><a href="#"><img src="yezzyV2.png" width="180px" height="auto">yeezy 350 v2</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="background">
+  <img src="background2.png" height="900px" width="630px">
+  <div class="triangle"></div>
+</div>
+
+    <div class="container">
+      <div class="img" id="img">
+        <img src="logo.png" alt="" width="200px" height="300px" />
+      </div>
+    </div>
+
+<div class="allsale">
+    <div class="sale1">
+      <p class="was">3400sek</p>
+      <p class="now">1200sek</p>
+      <a href="shoe2.html"><img src="force1(4).png" width="250px" height="160px"></a>
+      <p class="rea">sale</p>
+    </div>
+
+    <div class="sale2">
+      <p class="was">3400sek</p>
+      <p class="now">1200sek</p>
+      <a href="shoe3.html"><img src="jordan11(4).png" width="250px" height="160px"></a>
+      <p class="rea">sale</p>
+    </div>
+
+    <div class="sale3">
+      <p class="was">3400sek</p>
+      <p class="now">1200sek</p>
+      <a href="shoe1.html"><img src="jordan4(4).png" width="250px" height="160px"></a>
+      <p class="rea">sale</p>
+    </div>
+</div>
+
+    <div class="page1" id="page1">
+
+      <div class="shoes">
+
+        <div class="shoe1">
+          <a href="shoe1.html">
+          <img src="jordan4.png" width="250px" height="160px" />
+          </a>
+          <p class="shoe-text">Jordan 4</p>
+        </div>
+
+      <div class="shoe2">
+        <a href="shoe2.html">
+        <img src="force1.png" width="250px" height="160px" />
+        </a>
+        <p class="shoe-text">Air force 1</p>
+      </a>
+      </div>
+
+      <div class="shoe3">
+        <a href="shoe3.html">
+        <img src="jordan11.png" width="250px" height="160px" />
+        </a>
+        <p class="shoe-text">Jordan 11</p>
+      </a>
+      </div>
+
+    </div>
+
+    </div>
+    
+  
+      </div>
+      <script>
+        document.getElementById("cards").style.opacity = "0";
+        document.getElementById("myInput").style.opacity = "0";
+        document.getElementById("x").style.opacity = "0";
+      </script>
+  </body>
+</html>

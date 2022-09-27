@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <img src="logo.png" height="120px" max-width="120px" class="logo" />
+        <a href="index.html"><button id="home1">Home</button></a>
+        <a href="allshoes.html"><button id="home">Shoes</button></a>
+      </div>
+    </nav>
+
+    <label for="search"></label>
+    <input type="search" id="myInput2" onkeyup="myFunction2()" />
+
+    <div class="shoe-cards" id="cards">
+      <div class="card">
+        <ul id="myUL">
+          <li>
+            <img src="jordan4.png" width="180px" height="auto" /><a href="#"
+              >jordan4</a
+            >
+          </li>
+          <li>
+            <img src="jordan11.png" width="180px" height="auto" /><a href="#"
+              >jordan11</a
+            >
+          </li>
+          <li>
+            <img src="force1.png" width="180px" height="auto" /><a href="#"
+              >air force 1</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="shoe">
+      <div class="allshoes">
+        <img src="jordan4.png" max-width="250px" height="160px" />
+        <img src="jordan4(4).png" max-width="250px" height="160px" />
+        <img src="jordan11.png" max-width="250px" height="160px" />
+        <img src="jordan11(4).png" max-width="250px" height="160" />
+        <img src="force1.png" max-width="250px" height="160px" />
+        <img src="force1(4).png" max-width="250px" height="160px" />
+        <img src="yezzyV2.png" max-width="250px" height="160px" />
+      </div>
+    </div>
+
+    <script>
+      document.getElementById("cards").style.opacity = "0";
+      document.getElementById("myInput").style.opacity = "0";
+      document.getElementById("x").style.opacity = "0";
+    </script>
+  </body>
+</html>
